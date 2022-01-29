@@ -11,7 +11,7 @@ submit_form.addEventListener('submit', function(e){
 
     let name = this.querySelector('input[name="name"]');
     let gender = this.querySelector('input[name="gender"]:checked');
-    let skill = this.querySelectorAll('input[name="skill"]:checked')
+    let skill = this.querySelectorAll('input[name="skill"]:checked');
     let photo = this.querySelector('input[name="photo"]');
     
 
@@ -28,6 +28,7 @@ submit_form.addEventListener('submit', function(e){
     }else{
         data_arr= [];
     }
+
     data_arr.push({
         name   :name.value,
         gender :gender.value,
